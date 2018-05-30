@@ -102,13 +102,17 @@ margin-top: 260px;
 	width: 100%;
 	height: 753px;
 }
+.text2, .text3, .text4, .text5 {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 22px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
 .text2 {
 	padding: 230px 0 0 346px;
 	color: #fff;
 	text-align: right;
-	font-size: 25px;
-	font-family: 'Open Sans Condensed', sans-serif;
-	letter-spacing: 2px;
 	text-shadow: 1px 1px 5px #ff2431;
 	margin-top:0;
 }
@@ -124,9 +128,6 @@ margin-top: 260px;
 	width: 790px;
 	height: 430px;
 	color: #fff;
-	font-size: 25px;
-	font-family: 'Open Sans Condensed', sans-serif;
-	letter-spacing: 2px;
 	text-shadow: 1px 1px 5px #f86219;
 	margin-top:0;
 }
@@ -136,21 +137,18 @@ margin-top: 260px;
 	height: 753px;
 }
 .text4 {
-	padding: 185px 0 0 0;
+	padding: 185px 0 0 130px;
 	color: #fff;
-	font-size: 25px;
-	font-family: 'Open Sans Condensed', sans-serif;
-	letter-spacing: 2px;
 	text-shadow: 1px 1px 5px #1c3b56;
 	margin-top:0;
+	
 }
+
 .text5 {
 	color: #fff;
-	font-size: 20px;
 	text-align: right;
+	padding-right: 90px;
 	padding-top: 50px; 
-	font-family: 'Open Sans Condensed', sans-serif;
-	letter-spacing: 2px;
 	text-shadow: 1px 1px 5px #1c3b56;
 }
 
@@ -183,20 +181,18 @@ a.button1:active {
 	background: rgb(33,147,90);
 	box-shadow: 0 3px rgb(33,147,90) inset;
 }
-.text06 {
+.text6 {
 	padding-top: 15px;
 	padding-bottom: 25px;
 	text-align: center;
 	color: #fff;
-	font-size: 20px;
+	font-size: 30px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	letter-spacing: 2px;
 	text-shadow: 1px 1px 5px #1e1e1c;
-	
-}
-.text6 {
 	margin-top: 0;
 }
+
 .footinfo {
 	margin-top: 100px;
 	display: flex;
