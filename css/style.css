@@ -79,34 +79,57 @@ font-family: 'Cormorant Garamond', serif;
 }
 
 .text1 {
-font-family: 'Open Sans Condensed', sans-serif;
-text-transform: uppercase;
-color: #fff;
-font-size: 30px;
-letter-spacing: 6px;
-text-shadow: 2px 2px 5px #45464b;
-text-align: center;
-margin-top: 260px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 30px;
+	letter-spacing: 6px;
+	text-shadow: 2px 2px 5px #45464b;
+	text-align: center;
+	margin-top: 260px;
 }
  
 #maintrailer {
 	margin-top: 65px;
-	width: 1140px!important; 
-  margin-left: 0px!important; 
-  box-shadow: 0 0 6px 6px rgba(0,0,0,0.8)!important; 
-  -webkit-box-shadow: 0 0 6px 6px rgba(0,0,0,0.8)!important; 
-  -moz-box-shadow: 0 0 6px 6px rgba(0,0,0,0.8)!important; 	
+	width: 100%!important; 
+    margin-left: 0px!important; 
+    box-shadow: 0 0 6px 6px rgba(0,0,0,0.8)!important; 
+    -webkit-box-shadow: 0 0 6px 6px rgba(0,0,0,0.8)!important; 
+    -moz-box-shadow: 0 0 6px 6px rgba(0,0,0,0.8)!important; 	
 }
 #Container_02 {
 	background: url('../img/back2.jpg') no-repeat center top;
 	width: 100%;
 	height: 753px;
 }
+
+.container .text2 .s1 {
+	display: block;
+	padding-right: 140px;
+}
+.container .text2 .s2 {
+	display: block;
+	padding-right: 60px;
+}
+.container .text2 .s3 {
+	display: block;
+	padding-right: 150px;
+}
+.container .text2 .s4 {
+	display: block;
+	padding-right: 110px;
+}
+.container .text2 .s6 {
+	display: block;
+	padding-right: 205px;
+}
+
 .text2, .text3, .text4, .text5 {
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 22px;
 	letter-spacing: 1px;
 	line-height: 1.5;
+	font-weight: 700;
 }
 
 .text2 {
@@ -115,6 +138,7 @@ margin-top: 260px;
 	text-align: right;
 	text-shadow: 1px 1px 5px #ff2431;
 	margin-top:0;
+	display: block;
 }
 
 #Container_03 {
@@ -123,6 +147,26 @@ margin-top: 260px;
 	height: 753px;
 }
 
+.container .text3 .s1 {
+	padding-left: 110px;
+	display: block;
+}
+.container .text3 .s2 {
+	padding-left: 85px;	
+	display: block;
+}
+.container .text3 .s3 {
+	padding-left: 155px;
+	display: block;
+}
+.container .text3 .s4 {
+	padding-left: 105px;
+	display: block;
+}
+.container .text3 .s5 {
+	padding-left: 135px;
+	display: block;
+}
 .text3 {
 	padding: 233px 0 0 0;
 	width: 790px;
@@ -136,6 +180,16 @@ margin-top: 260px;
 	width: 100%;
 	height: 753px;
 }
+
+.container .text4 .s1 {
+	padding-left: 75px;
+	display: block;
+}
+.container .text4 .s2 {
+	padding-left: 50px;
+	display: block;
+}
+
 .text4 {
 	padding: 185px 0 0 130px;
 	color: #fff;
@@ -147,7 +201,7 @@ margin-top: 260px;
 .text5 {
 	color: #fff;
 	text-align: right;
-	padding-right: 90px;
+	padding-right: 125px;
 	padding-top: 50px; 
 	text-shadow: 1px 1px 5px #1c3b56;
 }
@@ -228,3 +282,9 @@ a.button1:active {
 .imgtext {
 	margin-left: 15px;
 }
+
+body.skin-oasis.background-fixed {
+	background: url('../img/backgr.jpg');
+	
+}
+
