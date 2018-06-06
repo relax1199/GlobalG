@@ -210,7 +210,17 @@ h2 {
 	font-size: 30px;
 	font-weight: 400;
 }
-#Container_03 h4, #Container_07 h4 {
+
+.cobble2 h4 {
+	margin: 15px 572px 15px 0;
+	padding-left: 15px;
+	border-bottom: 1px solid #ffffff66;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#Container_07 h4 {
 	margin: 15px 0;
 	padding-left: 15px;
 	border-bottom: 1px solid #ffffff66;
@@ -218,7 +228,7 @@ h2 {
 	font-size: 30px;
 	font-weight: 400;
 }
-#Container_04 h4, #Container_06 h4 {
+.dust22 h4, .mirage2 h4 {
 	margin: 15px 0 15px 572px;
 	padding-left: 15px;
 	border-bottom: 1px solid #ffffff66;
@@ -226,7 +236,7 @@ h2 {
 	font-size: 30px;
 	font-weight: 400;
 }
-#Container_05 h4, #Container_09 h4 {
+.inferno2 h4, .train2 h4 {
 	margin: 15px 572px 15px 0;
 	padding-left: 15px;
 	border-bottom: 1px solid #ffffff66;
