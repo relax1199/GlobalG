@@ -245,15 +245,15 @@ h2 {
 	font-weight: 400;
 }
 footer {
-	background-color: #000000b0;
 }
 .minifooter{
+	background-color: #000000b0;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	border-top: 1px solid #fff;
 }
 .footinfo {
-	justify-content: center;
+	margin: 67px 0 67px 465px;
 	display: flex
 }
 .imgitem {
@@ -276,4 +276,12 @@ footer {
 }
 .imgtext {
 	margin-left: 15px;
+}
+.terrorist {
+	position: absolute;
+	margin: -40px 0 0 0;
+
+}
+.footimg1 {
+	z-index: 100;
 }
