@@ -247,13 +247,13 @@ h2 {
 footer {
 }
 .minifooter{
-	background-color: #000000b0;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	background: url('../img/footerbackg.png') no-repeat;
+	padding-top: 73px;
+	padding-bottom: 46px;
 	border-top: 1px solid #fff;
 }
 .footinfo {
-	margin: 67px 0 67px 465px;
+	justify-content: center;
 	display: flex
 }
 .imgitem {
@@ -277,11 +277,7 @@ footer {
 .imgtext {
 	margin-left: 15px;
 }
-.terrorist {
-	position: absolute;
-	margin: -40px 0 0 0;
 
-}
 .footimg1 {
 	z-index: 100;
 }

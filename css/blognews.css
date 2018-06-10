@@ -4,15 +4,19 @@ body {
 	background: url('../img/view_maps/backinf.jpg') no-repeat fixed;
 	background-size: cover;
 }
-/*-------------------------header----------------------*/
+/*--------------------------menu------------------------*/
 header {
 	background-color: #000000b0;
 	width: 100%;
 	height: 66px;
 }
-.wrapper, .minicontainer, .minifooter, .infopage {
+.wrapper, .minicontainer, .minifooter {
 	max-width: 1140px;
 	margin: 0 auto;
+}
+.minicontainer{
+	border-top: 1px solid #fff;
+	background-color: #000000b0;
 }
 .menu {	
 	font-family: 'Cormorant Garamond', serif;
@@ -64,34 +68,47 @@ header {
 .headinf .menu__link:hover {
 	color: #f4a233;
 }
-/*-------------------------header----------------------*/
+/*--------------------------/menu------------------------*/
+/*------banner-------*/
+#Container_1 .banner {
+	margin: 0;
+	background: url('../img/bannernews.png') no-repeat;
+	height: 258px;
+	width: 100%;
+	font-family: 'Lobster', cursive;
+	color: #fff;
+}
+#Container_01 .banner {
+	margin: 0;
+	background: url('../img/bannerupdate.png') no-repeat;
+	height: 258px;
+	width: 100%;
+	font-family: 'Lobster', cursive;
+	color: #fff;
+}
 
+h1, h2, h3 {
+	margin: 0;
+	font-weight: 200;
+}
+
+#Container_1 h1, #Container_01 h1 {
+	font-size: 40px;
+	text-align: center;
+	padding-top: 40px;
+	text-shadow: 8px 9px 6px #dfdfdf;
+	letter-spacing: 2px;
+}
+/*------/banner-------*/
+/*----------blocknews------------*/
 .minicontainer {
 	font-family: 'Poiret One', cursive;
 	color: #fff;
-	padding-top: 10px;
-	background-color: #000000b0;
 }
-.rank {
-	display: flex;
-	float: left;
-}
-.infopage {
-	font-family: 'PT Sans', sans-serif;
-	text-align: center;
-	padding: 15px 0;
-	background-color: #000000b0;
-	color: #fff;
-
-}
-
-h4, h2 {
-	font-weight: 600;
-	margin:0;
-}
-.rankinfo h2 {
-	margin-left: 593px;
-	padding-top: 10px;
+.datenews {
+	padding: 0;
+	text-indent: unset;
+	margin: 15px 0 15px 70px;
 }
 p {
 	padding: 0 10px;
@@ -100,27 +117,52 @@ p {
 	margin-top: 15px;
 	margin-bottom: 0;
 	font-size: 20px;
-	letter-spacing: 1px; /*межбуквенный=) интервал*/
+	letter-spacing: 2px; /*межбуквенный=) интервал*/
+}
+.minicontainer h2{
+	margin-left: 70px; 
+	padding-top: 20px;
+	font-weight: 600;
+	font-size: 30px;
 }
 
-.rankimg {
+.minicontainer h3 {
+	margin-left: 70px; 
+	padding-top: 20px;
+	font-weight: 600;
+	font-size: 25px;
+}
+
+.images {
 	text-align: center;
-	margin: 0 15px;
-	height: 106px;
-	width: 158px;
 }
-.rankinfo ol {
-	margin: 5px 0;
-	margin-left: 22px; 
+
+.images img {
+	box-shadow: 0 0 15px rgb(251, 187, 98);
 }
-.rankinfo li {
+.minicontainer ul {
+	margin: 0;
+	padding: 15px 0;
+	list-style: none;
+}
+
+.minicontainer li {
+	padding: 0 10px;
+	text-indent: 1.5em; /*абзац*/
 	line-height: 1.5; /*межстрочный интервал*/
 	margin-top: 15px;
 	margin-bottom: 0;
 	font-size: 20px;
-	letter-spacing: 1px; /*межбуквенный=) интервал*/
+	letter-spacing: 2px; /*межбуквенный=) интервал*/
 } 
 
+.minicontainer ul li:before {
+    content:  "—";
+    position: relative;
+    left:     -5px;
+}
+
+/*----------blocknews------------*/
 /*--------------------------footer------------------------*/
 .minifooter{
 	background: url('../img/footerbackg.png') no-repeat;
@@ -156,4 +198,4 @@ p {
 .imgtext {
 	margin-left: 15px;
 }
-/*--------------------------footer------------------------*/
+/*--------------------------/footer------------------------*/
