@@ -85,7 +85,7 @@ p {
 }
 
 .container .forma .item .btn {
-	background-color: #342222;
+	background-color: black;
 	color: #fff;
 	width: 150px;
 	margin: auto;
@@ -99,48 +99,81 @@ p {
 	background-color: #fff;
 	color: black;
 }
-.container .forma #update_item {
+.container .forma #update_item ,.container .forma #news_item_edit_delete, .container .forma #update_item_edit_delete{
 	display: none;
 }
 
 #cke_contentNews {margin: 20px 30px;}
 #cke_contantUpdate {margin: 20px 30px;}
+.container .forma #news_item_edit_delete .tiding .head{
+	position: relative;
+}
+.container .forma #news_item_edit_delete .tiding .head .editNews{
+	width: 75px;
+	position: absolute;
+	top:10px;
+	right: 120px;
+}
+.container .forma #news_item_edit_delete .tiding .head .deleteNews{
+	width: 75px;
+	position: absolute;
+	top:10px;
+	right: 15px;
+}
+.container .forma #update_item_edit_delete .tiding .head{
+	position: relative;
+}
+.container .forma #update_item_edit_delete .tiding .head .editUpdate{
+	width: 75px;
+	position: absolute;
+	top:10px;
+	right: 120px;
+}
+.container .forma #update_item_edit_delete .tiding .head .deleteUpdate{
+	width: 75px;
+	position: absolute;
+	top:10px;
+	right: 15px;
+}
+
 .wrapper {
-	display: flex;
-	width: 1140px;
-	margin: 0 auto;
-	
+    display: flex;
+    width: 1140px;
+    margin: 0 auto;
+    
 }
 .none_block {
-	width: 230px;
+    width: 230px;
 }
 .edit_forma {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	left: 0;
-	top: 0;
-	display: block;
-	background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .edit_forma .close {
-	position: absolute;
-	top: 0;
-	right: 0;
-	background-color: #a60000;
-	color: #fff;
-	width: 70px;
-	padding: 18px 0;
-	margin: auto;
-	cursor: pointer;
-	text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #a60000;
+    color: #fff;
+    width: 70px;
+    padding: 18px 0;
+    margin: auto;
+    cursor: pointer;
+    text-align: center;
 }
 .edit_forma .close:hover {
-	background-color: red;
+    background-color: red;
 }
 .edit_forma #edit_news_item, .edit_forma #edit_update_item {
-	display: none;
-	width: 940px;
+    display: none;
+    width: 940px;
 }
+
+
 /*---------------forma---------------*/

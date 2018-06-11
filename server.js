@@ -32,8 +32,7 @@ app.use(session({
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
-// var data = require('./controllers/data');
-// var admin = require('./controllers/admin');
+var data = require('./controllers/data');
 
 function checkAuthentication(req,res,next){
     if(req.isAuthenticated()){
@@ -46,6 +45,34 @@ function checkAuthentication(req,res,next){
 app.get('/',function(req,res){
 	res.render('index.ejs',{});
 });
+
+app.get('/news',data.getNews);
+
+app.get('/updates',data.getUpdates);
+
+app.get('/admin',data.getData);
+
+app.post('/addNews',data.addNews);
+
+app.post('/addUpdate',data.addUpdate);
+
+app.post('/newsDelete',data.newsDelete);
+
+app.post('/updateDelete',data.updateDelete);
+
+app.post('/getUpdate',data.getUpdateId);
+
+app.post('/getNews',data.getNewsId);
+
+app.post('/updateNews',data.updateNews);
+
+app.post('/updateUpdate',data.updateUpdate);
+
+
+
+// app.post('/addNews',function(req,res){
+// 	console.log(req.body.newsTime)
+// });
 
 // app.post('/login',passport.authenticate('local', { failureRedirect: '/login' }),function(req,res){
 // 	res.redirect('/');
@@ -66,12 +93,12 @@ app.get('/admin',function(req,res){
 	res.render('admin.ejs',{});
 })
 
-// db.connect('mongodb://localhost:27017/database',function(err){
-	// if(err){
-	// 	return console.log(err);
-	// }
+db.connect('mongodb://localhost:27017/GlobalG',function(err){
+	if(err){
+		return console.log(err);
+	}
 	app.listen(9000,function(){
 		console.log("server started");
 	})
-// });
+});
 

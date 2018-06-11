@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>admin</title>
+	<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+	<link rel="stylesheet" href="../css/adminstyle.css">
+	<script src="../script/jquery.min.js"></script>
+<script src="../script/ckeditor/ckeditor.js"></script>
+<script src="../script/jquery.min.js"></script>
+<script src="../script/ckeditor/ckeditor.js"></script>
+<script src="../script/ckeditor/adapters/jquery.js"></script>
+<script src="../script/main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="menu">
+			<p>Мастерская</p>
+			<p class="inc">Добавление</p>
+			<a href="#" class="news">Новости</a>
+			<a href="#" class="update">Обновления</a>
+			<a href="/" class="home">Домой</a>
+			<p class="dec">Редактирование</p>
+			<a href="#" id="decNews" class="news">Новости</a>
+			<a href="#" id="decUpdate" class="update">Обновления</a>
+		</div>
+		<div class="forma">
+			<div id="news_item" class="item">
+				<input id="title_news" type="text" placeholder="Title">
+				<textarea id="contentNews" class="editor"></textarea>
+				<input type="file" id="newsImg">
+				<div class="btn addNews">Отправить</div>
+			</div>
+			<div id="update_item" class="item">
+				<input id="title_update" type="text" placeholder="Title">
+				<textarea id="contantUpdate" class="editor"></textarea>
+				<div class="btn addUpdate">Отправить</div>
+			</div>
+			<div id="news_item_edit_delete" class="item">
+				<%for(i in result.news){%>
+					<div class="tiding">
+						<div class="head">
+							<div class="title"><%-result.news[i].title%></div>
+							<div class="date"><%-result.news[i].time%></div>
+							<div class="btn editNews" data-id="<%-result.news[i]._id%>">Edit</div>
+							<div class="btn deleteNews" data-id="<%-result.news[i]._id%>">Delete</div>
+						</div>
+					</div>
+				<%}%>
+				<!-- <input id="title_news" type="text" placeholder="Title">
+				<textarea id="contentNews" class="editor"></textarea>
+				<input type="file" id="newsImg"> -->
+			</div>
+			<div id="update_item_edit_delete" class="item">
+				<!-- <input id="title_news" type="text" placeholder="Title">
+				<textarea id="contentNews" class="editor"></textarea>
+				<input type="file" id="newsImg"> -->
+				<%for(i in result.update){%>
+					<div class="tiding">
+						<div class="head">
+							<div class="title"><%-result.update[i].title%></div>
+							<div class="date"><%-result.update[i].time%></div>
+							<div class="btn editUpdate" data-id="<%-result.update[i]._id%>">Edit</div>
+							<div class="btn deleteUpdate" data-id="<%-result.update[i]._id%>">Delete</div>
+						</div>
+					</div>
+				<%}%>
+			</div>
+		</div>
+	</div>
+	<div class="edit_forma">
+			<div class="wrapper">
+				<div class="none_block"></div>
+				<div id="edit_news_item" class="item">
+					<input id="title_edit_news" type="text" placeholder="Title">
+					<textarea id="contentEditNews" class="editor"></textarea>
+					<input type="file" id="updateNewsImg">
+					<div class="btn editSendNews">Отправить</div>
+				</div>
+				<div id="edit_update_item" class="item">
+					<input id="title_edit_update" type="text" placeholder="Title">
+					<textarea id="contantEditUpdate" class="editor"></textarea>
+					<div class="btn editSendUpdate">Отправить</div>
+				</div>
+				<div class="close">X</div>
+			</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>updates</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/blognews.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Bad+Script|Bowlby+One+SC|Cormorant+Garamond|PT+Sans|Lobster|Fira+Sans:100|Poiret+One" rel="stylesheet">
+</head>
+<body>
+	<header class="headinf">
+		<div class="wrapper">
+			<div class="menu">
+				<ul class="menu__item">
+					<li class="item"><a href="index.html" id="csgo" class="item__CSGO">CS:GO</a></li>
+					<li class="item"><a href="news.html" class="menu__link">Новости</a></li>
+					<li class="item"><a href="updates.html" class="menu__link">Обновления</a></li>
+					<li class="item"><a href="maps.html" class="menu__link">Карты</a></li>
+					<li class="item"><a href="rank.html" class="menu__link">Звания</a></li>
+				</ul>
+			</div>
+		</div>	
+	</header>
+
+	<div id="Container_01" class="container">
+		<div class="minicontainer">
+			<div class="banner">
+				<h1>Обновления от Valve</h1>
+			</div>
+		</div>	
+	</div>
+	<%for(i in result){%>
+		<div id="Container_2" class="container">
+			<div class="minicontainer">
+				<h2><%-result[i].title%></h2>
+				<p class="datenews"><%-result[i].time%></p>
+				<%-result[i].content%>
+			</div>
+		</div>
+	<%}%>
+
+	<footer>
+		<div class="minifooter">
+			<div class="footinfo">
+				<div class="footimg1">
+					<a href="http://www.esrb.org/ratings/" class="esrb"><img src="../img/footer_esrb_big.png" alt="esrb"></a>
+				</div>
+				<div class="imgtext">
+					<ul class="imgitem">
+						<li class="items"><a href="https://store.steampowered.com/"><img src="../img/footer_steam.png" alt=""></a></li>
+						<li class="items"><a href="https://www.valvesoftware.com/ru/"><img src="../img/footer_valve.png" alt=""></a></li>
+						<li class="items"><a href="https://developer.valvesoftware.com"><img src="../img/footer_source.png" alt=""></a></li>
+					</ul>
+					<div class="t5">
+						<p class="t05">
+							© 2018 Valve Corporation, all rights reserved.  Valve, the Valve logo, Source, 
+							the Source logo, Steam, the Steam logo, Counter-Strike, and the Counter-Strike 
+							logo are trademarks and or registered trademarks of the Valve Corporation.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
