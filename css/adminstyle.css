@@ -85,7 +85,7 @@ p {
 }
 
 .container .forma .item .btn {
-	background-color: black;
+	background-color: #342222;
 	color: #fff;
 	width: 150px;
 	margin: auto;
@@ -105,6 +105,42 @@ p {
 
 #cke_contentNews {margin: 20px 30px;}
 #cke_contantUpdate {margin: 20px 30px;}
+.wrapper {
+	display: flex;
+	width: 1140px;
+	margin: 0 auto;
+	
+}
+.none_block {
+	width: 230px;
+}
+.edit_forma {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	display: block;
+	background: rgba(0, 0, 0, 0.6);
+}
 
-
+.edit_forma .close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #a60000;
+	color: #fff;
+	width: 70px;
+	padding: 18px 0;
+	margin: auto;
+	cursor: pointer;
+	text-align: center;
+}
+.edit_forma .close:hover {
+	background-color: red;
+}
+.edit_forma #edit_news_item, .edit_forma #edit_update_item {
+	display: none;
+	width: 940px;
+}
 /*---------------forma---------------*/
