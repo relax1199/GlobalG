@@ -1,0 +1,92 @@
+body {
+	background: url('../img/adminground.jpg') no-repeat;
+	background-size: cover;
+	margin-top: 100px;
+}
+
+.container {
+
+	display: flex;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.menu {
+	width:230px;
+	height: 700px;
+	background-color: #241818;
+}
+.forma {
+	width:100%;
+	height: 700px;
+	background: #ffffffde;
+}
+
+/*---------------knopka---------------*/
+.update {
+
+	margin-top: 91px;
+	position: absolute;
+	padding: 17px 21px 17px 22px;
+}
+.news {
+	position: absolute;
+	margin-top: 25px;
+	padding: 17px 45px 17px 44px;
+}
+p {
+	margin: 15px 0 0 0; 
+	color: #fff;
+	font-size: 33px;
+	font-family: 'Jura', sans-serif;
+}
+.update, .news {
+	font-family: 'Jura', sans-serif;
+	font-size: 25px;
+	color: #fff; /* цвет текста */
+	text-decoration: none; /* убирать подчёркивание у ссылок */
+	user-select: none; /* убирать выделение текста */
+	background: rgb(212,75,56); /* фон кнопки */
+	outline: none;
+} 
+.news:hover { 
+	background: rgb(232,95,76); 
+} 
+.news:active { 
+	background: rgb(152,15,0); 
+}
+.update:hover {
+	background: rgb(232,95,76); 
+}
+.update:active{
+	background: rgb(152,15,0); 
+}
+/*---------------knopka---------------*/
+
+/*---------------forma---------------*/
+
+.container .forma .item {
+	display: flex;
+	flex-direction: column;	
+}
+
+.container .forma .item .btn {
+	background-color: black;
+	color: #fff;
+	width: 150px;
+	margin: auto;
+	text-align: center;
+	transition: all 1s; 
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.container .forma .item .btn:hover {
+	background-color: #fff;
+	color: black;
+}
+.container .forma #update_item {
+	display: none;
+}
+
+
+/*---------------forma---------------*/

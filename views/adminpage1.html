@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>admin</title>
+	<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+	<link rel="stylesheet" href="../css/adminstyle.css">
+	<script src="../script/jquery.min.js"></script>
+<script src="../script/ckeditor/ckeditor.js"></script>
+<script src="../script/jquery.min.js"></script>
+<script src="../script/ckeditor/ckeditor.js"></script>
+<script src="../script/ckeditor/adapters/jquery.js"></script>
+<script src="../script/main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="menu">
+			<p>Мастерская</p>
+			<a href="#" class="news">Новости</a>
+			<a href="#" class="update">Обновления</a>
+		</div>
+		<div class="forma">
+			<div id="news_item" class="item">
+				<input id="title_news" type="text" placeholder="Title">
+				<textarea id="contentNews" class="editor"></textarea>
+				<input type="file">
+				<div class="btn addNews">Отправить</div>
+			</div>
+			<div id="update_item" class="item">
+				<input id="title_update" type="text" placeholder="Title">
+				<textarea id="contantUpdate" class="editor"></textarea>
+				<div class="btn addUpdate">Отправить</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
