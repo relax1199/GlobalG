@@ -26,12 +26,25 @@ body {
 
 	margin-top: 91px;
 	position: absolute;
-	padding: 17px 21px 17px 22px;
+	padding: 17px 27px 17px 26px;
 }
+
 .news {
 	position: absolute;
 	margin-top: 25px;
-	padding: 17px 45px 17px 44px;
+	padding: 17px 50px 17px 49px;
+}
+.home {
+
+	margin-top: 157px;
+	position: absolute;
+	padding: 17px 63px 17px 63px;
+}
+#decNews {
+	margin-top: 21px;
+}
+#decUpdate {
+	margin-top: 87px;
 }
 p {
 	margin: 15px 0 0 0; 
@@ -39,26 +52,28 @@ p {
 	font-size: 33px;
 	font-family: 'Jura', sans-serif;
 }
-.update, .news {
+
+.inc, .dec {
+	color: #fff;
+	font-size: 25px;
+}
+.dec{
+	margin-top: 237px;
+}
+.update, .news, .home {
 	font-family: 'Jura', sans-serif;
 	font-size: 25px;
 	color: #fff; /* цвет текста */
 	text-decoration: none; /* убирать подчёркивание у ссылок */
 	user-select: none; /* убирать выделение текста */
-	background: rgb(212,75,56); /* фон кнопки */
+	background: rgb(52, 34, 34); /* фон кнопки */
 	outline: none;
 } 
-.news:hover { 
-	background: rgb(232,95,76); 
+.home:hover, .update:hover, .news:hover { 
+	background: rgb(216, 193, 130); 
 } 
-.news:active { 
-	background: rgb(152,15,0); 
-}
-.update:hover {
-	background: rgb(232,95,76); 
-}
-.update:active{
-	background: rgb(152,15,0); 
+.home:active, .update:active, .news:active { 
+	background: rgb(149, 141, 0); 
 }
 /*---------------knopka---------------*/
 
@@ -87,6 +102,9 @@ p {
 .container .forma #update_item {
 	display: none;
 }
+
+#cke_contentNews {margin: 20px 30px;}
+#cke_contantUpdate {margin: 20px 30px;}
 
 
 /*---------------forma---------------*/
