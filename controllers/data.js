@@ -16,6 +16,24 @@ exports.addNews = function(req,res){
     })
 }
 
+exports.login = function(req,res){
+    var user = {
+        login:req.body.login,
+        password:req.body.password
+    }
+    console.log(user);
+    data.login(user,function(err,result){
+        if(result!=""){
+            res.cookie("login",result[0].login);
+            res.cookie("password",result[0].password);
+            res.send({success:true}).end();
+        }
+        else{
+            res.send({success:false}).end();
+        }
+    })
+}
+
 exports.addUpdate = function(req,res){
     var update = {
         title:req.body.updateTitle,

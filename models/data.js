@@ -88,6 +88,12 @@ exports.updateNews = function(news,cb){
     })
 }
 
+exports.login = function(user,cb){
+    db.get().collection('admin').find({login:user.login,password:user.password}).toArray(function(err,res){
+        cb(err,res);
+    })
+}
+
 exports.updateUpdate = function(update,cb){
     db.get().collection('update').update({_id:ObjectID(update.id)},{$set:{
         title:update.title,

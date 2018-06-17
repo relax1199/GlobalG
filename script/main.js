@@ -170,6 +170,25 @@ $( 'textarea.editor' ).ckeditor();
             }
         })
      })
+
+     $('.login-button').click(function(){
+         console.log("huit")
+        if($('#login')&& $('#password')){
+            $.ajax({
+                url:'/login',
+                type:'POST',
+                data:{
+                    login:$('#login'),
+                    password:$('#password')
+                }
+            }).done(function(res){
+                if(res)
+                    location.reload();
+            }).fail(function(err){
+                alert(err);
+            })
+        }
+     });
      
 
     $('.btn.editNews').click(function(){

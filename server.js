@@ -34,12 +34,17 @@ app.set('view engine', 'ejs');
 
 var data = require('./controllers/data');
 
-function checkAuthentication(req,res,next){
-    if(req.isAuthenticated()){
-        next();
-    } else{
-        res.redirect("/login");
-    }
+function checkAdmin(req,res,next){
+    console.log(req.cookies.login);
+    db.get().collection('admin').find().toArray(function(err,result){
+        console.log(req.cookies);
+        if(req.cookies.login == result[0].login  && req.cookies.password == result[0].password){
+            next();	
+        }
+        else{
+            res.redirect('/login')
+        }
+    })
 }
 
 app.get('/',function(req,res){
@@ -50,40 +55,25 @@ app.get('/news',data.getNews);
 
 app.get('/updates',data.getUpdates);
 
-app.get('/admin',data.getData);
+app.get('/admin',checkAdmin,data.getData);
 
-app.post('/addNews',data.addNews);
+app.post('/addNews',checkAdmin,data.addNews);
 
-app.post('/addUpdate',data.addUpdate);
+app.post('/addUpdate',checkAdmin,data.addUpdate);
 
-app.post('/newsDelete',data.newsDelete);
+app.post('/newsDelete',checkAdmin,data.newsDelete);
 
-app.post('/updateDelete',data.updateDelete);
+app.post('/updateDelete',checkAdmin,data.updateDelete);
 
-app.post('/getUpdate',data.getUpdateId);
+app.post('/getUpdate',checkAdmin,data.getUpdateId);
 
-app.post('/getNews',data.getNewsId);
+app.post('/getNews',checkAdmin,data.getNewsId);
 
-app.post('/updateNews',data.updateNews);
+app.post('/updateNews',checkAdmin,data.updateNews);
 
-app.post('/updateUpdate',data.updateUpdate);
+app.post('/updateUpdate',checkAdmin,data.updateUpdate);
 
-
-
-// app.post('/addNews',function(req,res){
-// 	console.log(req.body.newsTime)
-// });
-
-// app.post('/login',passport.authenticate('local', { failureRedirect: '/login' }),function(req,res){
-// 	res.redirect('/');
-// });
-
-// app.post('/logout',function(req,res){
-// 	if(req.isAuthenticated()){
-// 		req.logout();
-// 		res.sendStatus(200);
-// 	}
-// })
+app.post('/login',data.login);
 
 app.get('/login',function(req,res){
 	res.render('login.ejs',{});
@@ -97,7 +87,7 @@ db.connect('mongodb://localhost:27017/GlobalG',function(err){
 	if(err){
 		return console.log(err);
 	}
-	app.listen(9000,function(){
+	app.listen(8000,function(){
 		console.log("server started");
 	})
 });
